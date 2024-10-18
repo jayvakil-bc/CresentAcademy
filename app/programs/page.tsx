@@ -2,7 +2,7 @@
 import Footer from '@/components/Footer';
 import ProgNavbar from '@/components/ProgNavbar';
 import GetAQuoteFooter from '@/components/GetAQuoteFooter';
-import React,{ useState,  useEffect } from 'react';
+import React,{} from 'react';
 
 // Programs data (General)
 const programsData = [
@@ -126,7 +126,7 @@ const Programs =()=>
                 <h1 className="text-5xl font-bold">Our Programs</h1>
                 <p className="text-2xl mt-4">Comprehensive Learning for All Ages</p>
                 <p className="mt-6 text-lg max-w-2xl mx-auto">
-                    Whether you're looking to build a strong academic foundation or preparing for your next big exam, 
+                    Whether you&apos;re looking to build a strong academic foundation or preparing for your next big exam, 
                     our programs are designed to provide comprehensive support for students at every level.
                 </p>
             </div>

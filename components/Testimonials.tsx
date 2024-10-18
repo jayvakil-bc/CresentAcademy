@@ -4,7 +4,7 @@ const Testimonials = () => {
     const testimonials = [
         {
             name: "8th Grade",
-            text: "Crescent Academy has been a game-changer for my child's education. The tutors are fantastic and really understand how to motivate and engage students.",
+            text: "Crescent Academy has been a game-changer for my child&apos;s education. The tutors are fantastic and really understand how to motivate and engage students.",
             role: "Parent",
         },
         {
@@ -28,7 +28,7 @@ const Testimonials = () => {
                         <div className="mb-4">
                             <FaUserCircle className="text-6xl text-[#17008c]" /> 
                         </div>
-                        <p className="text-gray-600 text-lg mb-4">"{testimonial.text}"</p>
+                        <p className="text-gray-600 text-lg mb-4">&quot;{testimonial.text}&quot;</p>
                         <h3 className="text-xl font-semibold mb-1">{testimonial.name}</h3>
                         <p className="text-gray-500 text-md">{testimonial.role}</p>
                     </div>
