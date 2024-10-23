@@ -9,22 +9,22 @@ const programsData = [
     {
         title: "Elementary Programs",
         description: "Our Elementary programs foster curiosity and build strong foundations in core subjects like Math, Science, and Languages. We help young minds explore and learn in a supportive environment.",
-        bgColor: "bg-blue-200",
+        bgColor: "bg-[#D0E2FF]", // Light blue for background
     },
     {
         title: "Middle School Programs",
         description: "Middle school is a crucial time for students. Our programs are designed to enhance critical thinking, develop problem-solving skills, and ensure academic success across all subjects.",
-        bgColor: "bg-yellow-200",
+        bgColor: "bg-[#FFCC80]", // Soft yellow for background
     },
     {
         title: "High School Programs",
         description: "Our High School programs provide advanced academic support, preparing students for college and beyond. With specialized tutoring in Math, Science, and Languages, students can excel in their studies.",
-        bgColor: "bg-green-200",
+        bgColor: "bg-[#D0F0C0]", // Soft green for background
     },
     {
         title: "Specialized Courses",
         description: "In addition to academic tutoring, we offer specialized courses for exam preparation, language skills, and more. Tailored to individual needs, these courses help students achieve their academic goals.",
-        bgColor: "bg-pink-200",
+        bgColor: "bg-[#FFD1DC]", // Soft pink for background
     },
 ];
 
@@ -97,36 +97,36 @@ const stemCamps = [
     {
         title: "Robotics Workshops",
         imgSrc: "/assets/robotics.jpg",
-        bgColor: "bg-teal-200",
+        bgColor: "bg-[#B2EBF2]", // Light teal background
     },
     {
         title: "Coding Classes",
         imgSrc: "/assets/coding.jpg",
-        bgColor: "bg-orange-200",
+        bgColor: "bg-[#FFCC80]", // Light orange background
     },
     {
         title: "Math Enrichment",
         imgSrc: "/assets/math.jpg",
-        bgColor: "bg-purple-200",
+        bgColor: "bg-[#D1C4E9]", // Light purple background
     },
     {
         title: "Science Exploration",
         imgSrc: "/assets/science-exploration.jpg",
-        bgColor: "bg-purple-200",
+        bgColor: "bg-[#D1C4E9]", // Same purple as Math Enrichment for consistency
     },
 ];
-const Programs =()=>
-    {
+
+const Programs = () => {
     return (
-        <div className="min-h-screen py-12 bg-gradient-to-br from-indigo-300 via-purple-200 to-pink-100">
-            <ProgNavbar/>
+        <div className="min-h-screen py-12 bg-[#ECF0F3]">
+            <ProgNavbar />
 
             {/* Hero Section */}
-            <div className="text-center py-16 bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+            <div className="text-center py-16 bg-[#17008c] text-white">
                 <h1 className="text-5xl font-bold">Our Programs</h1>
                 <p className="text-2xl mt-4">Comprehensive Learning for All Ages</p>
-                <p className="mt-6 text-lg max-w-2xl mx-auto">
-                    Whether you&apos;re looking to build a strong academic foundation or preparing for your next big exam, 
+                <p className="mt-6 text-lg max-w-2xl mx-auto text-white">
+                    Whether you&apos;re looking to build a strong academic foundation or preparing for your next big exam,
                     our programs are designed to provide comprehensive support for students at every level.
                 </p>
             </div>
@@ -134,53 +134,51 @@ const Programs =()=>
             {/* Key Points Section */}
             <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 py-12">
                 {keyPoints.map((point, index) => (
-                    <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
-                        <h2 className="text-2xl font-semibold mb-4 text-[#17008c]">{point.title}</h2>
-                        <p className="text-gray-600">{point.description}</p>
+                    <div key={index} className="bg-[#FFECB3] p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h2 className="text-2xl font-semibold mb-4 text-[#17008C]">{point.title}</h2>
+                        <p className="text-gray-700">{point.description}</p>
                     </div>
                 ))}
             </div>
 
             {/* Programs List Section */}
-            <h2 className="text-5xl font-bold text-center mb-12 text-[#17008c]">Explore Our Programs</h2>
+            <h2 className="text-5xl font-bold text-center mb-12 text-[#17008C]">Explore Our Programs</h2>
             <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-6">
                 {programsData.map((program, index) => (
                     <div key={index} className={`p-6 rounded-lg shadow-lg ${program.bgColor}`}>
-                        <h2 className="text-3xl font-semibold mb-4 text-[#17008c]">{program.title}</h2>
+                        <h2 className="text-3xl font-semibold mb-4 text-[#17008C]">{program.title}</h2>
                         <p className="text-lg text-gray-700">{program.description}</p>
                     </div>
                 ))}
             </div>
 
             {/* Detailed Program Features with Images */}
-            <h2 className="text-5xl font-bold text-center mt-16 mb-12 text-[#17008c]">Detailed Program Features</h2>
+            <h2 className="text-5xl font-bold text-center mt-16 mb-12 text-[#17008C]">Detailed Program Features</h2>
             <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                 {detailedCourses.map((detail, index) => (
-                    <div key={index} className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div key={index} className="bg-[#FFECB3] p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
                         {/* <img src={detail.imgSrc} alt={detail.title} className="rounded-lg mb-4" /> */}
-                        <h2 className="text-2xl font-semibold mb-4 text-[#17008c]">{detail.title}</h2>
-                        <p className="text-gray-600">{detail.description}</p>
+                        <h2 className="text-2xl font-semibold mb-4 text-[#17008C]">{detail.title}</h2>
+                        <p className="text-gray-700">{detail.description}</p>
                     </div>
                 ))}
             </div>
 
             {/* STEM Summer Camps with Images and Headings */}
-            <h2 className="text-5xl font-bold text-center mt-16 mb-12 text-[#17008c]">STEM Summer Camps</h2>
+            <h2 className="text-5xl font-bold text-center mt-16 mb-12 text-[#17008C]">STEM Summer Camps</h2>
             <div className="max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 p-6">
                 {stemCamps.map((camp, index) => (
                     <div key={index} className={`p-6 rounded-lg shadow-lg ${camp.bgColor}`}>
                         {/* <img src={camp.imgSrc} alt={camp.title} className="rounded-lg mb-4" /> */}
-                        <h2 className="text-3xl font-semibold text-[#17008c]">{camp.title}</h2>
+                        <h2 className="text-3xl font-semibold mb-4 text-[#17008C]">{camp.title}</h2>
                     </div>
                 ))}
             </div>
 
-            {/* Footer Get a Quote Section */}
             <GetAQuoteFooter />
-            <Footer/>
-            {/* Contact Popup Component */}
+            <Footer />
         </div>
     );
-};
+}
 
 export default Programs;

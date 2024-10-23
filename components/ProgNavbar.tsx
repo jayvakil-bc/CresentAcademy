@@ -6,7 +6,7 @@ import Logo from "../public/assets/home/logo.png";
 
 const ProgNavbar =()=> {
     return (
-        <div className='w-full h-20 shadow-xl z-[100]'>
+        <div className='w-full h-20 shadow-xl z-[100] text-black'>
             <div className='flex justify-between items-right w-full h-full px-2 2xl:px-16'>
             <div className="flex items-center">
                 <Link href='/'>

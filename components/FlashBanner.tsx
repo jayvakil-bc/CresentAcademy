@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Logo from "../public/assets/home/logo.png";
+import FinalBanner from "../public/assets/home/Final Banner.jpeg";
 
 const FlashBanner = () => {
     const [visible, setVisible] = useState(true);
@@ -23,7 +23,7 @@ const FlashBanner = () => {
 
             <div className="relative max-w-2xl w-full"> 
                 <Image 
-                    src={Logo}
+                    src={FinalBanner}
                     alt="Welcome to Crescent Academy" 
                     layout="responsive" 
                     width={1200} 
