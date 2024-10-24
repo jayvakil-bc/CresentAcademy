@@ -3,9 +3,9 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../public/assets/home/logo.png'; 
 
-interface ContactPopupProps {
+interface ContactPopupProps{
     isOpen: boolean; 
-    onClose: () => void; 
+    onClose: () => void;
 }
 
 const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
@@ -25,7 +25,7 @@ const ContactPopup: React.FC<ContactPopupProps> = ({ isOpen, onClose }) => {
                 <p className="mb-2"><strong>Address:</strong> 40 Innovation Dr unit 8b, Woodbridge, ON L4H 0T2, Canada</p>
                 <p className="mb-2">
                     <strong>Email:</strong> 
-                    <a href="mailto:info@crescentacademy.com" className="text-blue-500 hover:underline"> info@crescentacademy.com</a>
+                    <a href="mailto:info@crescentacademy.com" className="text-blue-500 hover:underline">  info@crescentacademy.com</a>
                 </p>
             </div>
         </div>
