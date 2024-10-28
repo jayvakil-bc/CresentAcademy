@@ -10,7 +10,7 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col md:flex-row">
                     <div className="mb-4 md:mb-0 md:mr-8">
-                        <p className="text-sm">40 Innovation Dr unit 8b,<br/> Woodbridge, ON L4H 0T2,<br/> Canada</p>
+                        <p className="text-sm">40 Innovation Dr Unit 8b,<br/> Woodbridge, ON L4H 0T2,<br/> Canada</p>
                     </div>
                     <div className="mb-4 md:mb-0 md:mr-8">
                         <p className="text-sm">Phone: +1(289)-236-1840</p>
