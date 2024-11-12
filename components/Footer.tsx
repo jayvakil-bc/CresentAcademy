@@ -13,9 +13,9 @@ const Footer = () => {
                         <p className="text-sm">40 Innovation Dr Unit 8b,<br/> Woodbridge, ON L4H 0T2,<br/> Canada</p>
                     </div>
                     <div className="mb-4 md:mb-0 md:mr-8">
-                        <p className="text-sm">Phone: +1(289)-236-1840</p>
-                        <a href="mailto:info@crescentacademy.com" className="text-sm hover:underline">
-                            Email: info@crescentacademy.com
+                        <p className="text-sm">Phone: +1(905) 266-1087</p>
+                        <a href="mailto:CresAcademy.Woodbridge@gmail.com" className="text-sm hover:underline">
+                            Email: CresAcademy.Woodbridge@gmail.com
                         </a>
                     </div>
                 </div>
